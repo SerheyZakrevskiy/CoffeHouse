@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #E1D4C9;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+ /* Navigation block */
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+.nav {
+    width: 1360px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links-ul {
+    display: flex;
+}
+.nav-li {
+    position: relative;
+    display: inline-block;
+    color: #403F3D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    cursor: pointer;
+}
+.nav-li:not(:last-child) {
+    padding-right: 40px;
+}
+
+
+
+.nav-li:before,
+.nav-li:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    transition: width 0.5s ease;
+}
+
+.nav-li:before {
+    left: calc(50% - 40px);
+    background-color: #403F3D;
+    transform-origin: 100% 50%;
+}
+
+.nav-li:after {
+    right: calc(50%);
+    background-color: #403F3D;
+    transform-origin: 0 50%;
+}
+
+.nav-li:hover:before,
+.nav-li:hover:after {
+    width: 50%;
+}
+
+
+.nav-li-last:before {
+    left: 50%;
+    background-color: #403F3D;
+    transform-origin: 100% 50%;
+}
+
+.nav-li-last:after {
+    right: 50%;
+    background-color: #403F3D;
+    transform-origin: 0 50%;
+}
+
+.nav-li-last:hover:before,
+.nav-li-last:hover:after {
+    width: 50%;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.menu-nav-a {
+    position: relative;
+    display: relative;
+    color: #403F3D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    padding-right: 8px ;
+}
+
+.menu:before,
+.menu:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 13px;
+    transition: width 0.5s ease;
+}
+
+.menu:before {
+    left: calc(50%);
+    background-color: #403F3D;
+    transform-origin: 100% 50%;
+}
+
+.menu:after {
+    right: 50%;
+    background-color: #403F3D;
+    transform-origin: 0 50%;
+}
+
+.menu:hover:before,
+.menu:hover:after {
+    width: 50%;
+}
