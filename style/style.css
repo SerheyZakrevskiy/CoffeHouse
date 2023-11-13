@@ -161,7 +161,7 @@ body {
 
 .enjoy-main-background {
     background: url(/assets/bgc__hero.jpg), lightgray 50% / cover no-repeat;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     background-position: 100%;
     height: 640px;
     border-radius: 40px;
@@ -235,7 +235,95 @@ body {
     transition: all 0.5s ease;
 }
 
+/*  Favourites coffee */
 
 
+.favourites-coffee {
+    height: 800px;
+    margin-bottom: 100px;
+}
 
+.title-favourites-coffee {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.h1-favourites-coffee {
+    color:#403F3D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.h1-span-favourites-coffee {
+    color: #B0907A;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+.slider-favorites-coffee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-slider-favourites-coffee {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 480px;
+}
+
+.name-favourites.coffee {
+    color: #403F3D;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.paragraph-favourites-coffee {
+    color: #403F3D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 14px 0;
+}
+.price-favourites-coffee {
+    color: #403F3D;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.buttons-right-favourites-coffee {
+    border-radius: 100px;
+}
+.buttons-left-favourites-coffee {
+    border-radius: 100px;
+}
+.slider-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dot {
+    height: 4px;
+    width: 40px;
+    margin: 0 10px;
+    background-color: #bbb;
+    border-radius: 100px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
 
