@@ -327,3 +327,178 @@ body {
     background-color: #717171;
 }
 
+/* About block */
+.about {
+    margin-bottom: 100px;
+}
+.title-about {
+    margin-bottom: 40px;
+}
+.h1-title-about {
+color: #403F3D;
+font-family: Inter;
+font-size: 60px;
+font-style: italic;
+font-weight: 600;
+line-height: 125%;
+}
+.span-h1-title-about {
+color: #B0907A;
+font-family: Inter;
+font-size: 60px;
+font-style: italic;
+font-weight: 600;
+line-height: 125%;
+}
+.photogallery-about {
+    display: flex;
+}
+.photogallery-about-verticale1 {
+    margin-right: 40px;
+}
+.photogallery-about-verticale2 {
+    position: relative;
+}
+
+.about-photo-scale {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-about1 {
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-out;
+}
+.photo-about2 {
+    border-radius: 20px;
+    transition: transform 0.5s ease-out;
+}
+.photo-about3 {
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-out;
+}
+
+.photo-about4 {
+    border-radius: 20px;
+    transition: transform 0.5s ease-out;
+}.photo-about1:hover {
+    transform: scale(1.1);
+}
+.photo-about2:hover {
+    transform: scale(1.1);
+}
+.photo-about3:hover {
+    transform: scale(1.1);
+}
+
+.photo-about4:hover {
+    transform: scale(1.1);
+}
+
+/* MOBILE-APP */
+
+.mobile-app {
+    display: flex;
+    margin-bottom: 100px;
+}
+.mobile-app-download {
+    display: flex;
+}
+.mobile-app-download-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mobile-app-download-content-center {
+    width: 630px;
+    height: 342px;
+}
+.h1-mobile-app-download-content {
+color: #403F3D;
+font-family: Inter;
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%;
+}
+.span-mobile-app-download-content {
+color: #B0907A;
+font-family: Inter;
+font-size: 60px;
+font-style: italic;
+font-weight: 600;
+line-height: 125%;
+}
+.paragraph-mobile-app-download {
+color: #403F3D;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+margin: 40px 0;
+}
+.buttons-mobile-app-download {
+    display: flex;
+}
+.buttons-app-store {
+        width: 200px;
+        height: 64px;
+        gap: 8px;
+        justify-content: center;
+        display: flex;
+        border-radius: 100px;
+        border: 1px solid var(--border-dark, #665F55);
+        align-items: center;
+        transition: background-color 0.9s ease, color 0.9s ease;
+}
+.buttons-app-store:hover {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.buttons-app-store:first-child {
+    margin-right: 20px;
+}
+.img-buttons-mobile-app {
+    width: 36px;
+    height: 36px;
+    transition: filter 0.5s ease;
+}
+.buttons-app-store:hover .img-buttons-mobile-app {
+    filter: invert(1);
+    color: #E1D4C9;
+}
+
+.paragraph-buttons-mobile-app {
+color: #403F3D;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
+transition: color 0.5s ease;
+}
+.buttons-app-store:hover .paragraph-buttons-mobile-app {
+    color: #E1D4C9;
+}
+.h3-buttons-mobile-app {
+text-align: center;
+color: #403F3D;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+transition: color 0.5s ease;
+}
+.buttons-app-store:hover .h3-buttons-mobile-app {
+    color: #E1D4C9;
+}
+
+.mobile-app-images {
+    margin-left: 100px;
+}
