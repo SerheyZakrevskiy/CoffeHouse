@@ -608,6 +608,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 150%;
 gap: 8px;
+align-items: center;
 }
 
 .a-footer-contact-us-info::before {
