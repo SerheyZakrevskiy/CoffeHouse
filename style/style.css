@@ -54,7 +54,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     cursor: pointer;
 }
 .nav-li:not(:last-child) {
@@ -128,7 +128,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     padding-right: 8px ;
 }
 
@@ -218,7 +218,7 @@ body {
     overflow: hidden;
 }
 .menu-button-main::before {
-    content: url(/assets/coffee-cup.svg);
+    content: url(assets/coffee-cup.svg);
     position: absolute;
     top: 50%;
     right: 45%;
