@@ -218,7 +218,7 @@ body {
     overflow: hidden;
 }
 .menu-button-main::before {
-    content: url(/assets/coffee-cup.svg);
+    content: url(assets/coffee-cup.svg);
     position: absolute;
     top: 50%;
     right: 45%;

@@ -163,7 +163,7 @@ body {
 /* Enjoy block */
 
 .enjoy-main-background {
-    background: url(/assets/bgc__hero.jpg), lightgray 50% / cover no-repeat;
+    background: url(assets/bgc__hero.jpg), lightgray 50% / cover no-repeat;
     margin-bottom: 100px;
     background-position: 100%;
     height: 640px;
