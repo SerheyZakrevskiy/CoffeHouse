@@ -45,6 +45,7 @@ body {
 
 .nav-links-ul {
     display: flex;
+    gap: 30px;
 }
 .nav-li {
     position: relative;
@@ -57,9 +58,7 @@ body {
     line-height: 150%;
     cursor: pointer;
 }
-.nav-li:not(:last-child) {
-    padding-right: 40px;
-}
+
 
 
 
@@ -74,13 +73,13 @@ body {
 }
 
 .nav-li:before {
-    left: calc(50% - 40px);
+    left: 50%;
     background-color: #403F3D;
     transform-origin: 100% 50%;
 }
 
 .nav-li:after {
-    right: calc(50%);
+    right: 50%;
     background-color: #403F3D;
     transform-origin: 0 50%;
 }
@@ -614,7 +613,7 @@ align-items: center;
 .a-footer-contact-us-info::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 50%;
     width: 0;
     height: 2px;
