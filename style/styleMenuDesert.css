@@ -61,7 +61,14 @@ body {
 
 
 
-
+.nav-li-before:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    transition: width 0.5s ease;
+}
 .nav-li:before,
 .nav-li:after {
     content: '';
@@ -131,15 +138,24 @@ body {
     padding-right: 8px;
 }
 
+
 .menu:before,
 .menu:after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 100%; /* Ширина подчеркивания */
     height: 2px;
     bottom: 12px;
-    background-color: #403F3D;
+    background-color: #403F3D; /* Цвет подчеркивания */
     transition: width 0.5s ease;
+}
+
+.menu:before {
+    left: 0;
+}
+
+.menu:after {
+    right: 0;
 }
 
 /*  Menu page coffee block */
@@ -206,7 +222,7 @@ font-weight: 600;
 line-height: 150%;
 cursor: pointer;
 }
-.menu-page-a:first-child {
+.menu-page-a:nth-child(3) {
     background: #665F55;
     color: #E1D4C9;
 }

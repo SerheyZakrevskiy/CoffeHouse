@@ -128,7 +128,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    padding-right: 8px;
+    padding-right: 8px ;
 }
 
 .menu:before,
@@ -206,7 +206,7 @@ font-weight: 600;
 line-height: 150%;
 cursor: pointer;
 }
-.menu-page-a:first-child {
+.menu-page-a:nth-child(2) {
     background: #665F55;
     color: #E1D4C9;
 }
