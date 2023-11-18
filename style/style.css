@@ -386,7 +386,8 @@ line-height: 125%;
 .photo-about4 {
     border-radius: 20px;
     transition: transform 0.5s ease-out;
-}.photo-about1:hover {
+}
+.photo-about1:hover {
     transform: scale(1.1);
 }
 .photo-about2:hover {

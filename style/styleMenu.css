@@ -27,7 +27,7 @@ body {
 }
  /* Navigation block */
 
- .navigation {
+.navigation {
     display: flex;
     flex-direction: row;
     padding: 20px 0;
@@ -158,83 +158,141 @@ body {
     width: 50%;
 }
 
-/*  Enjoy block */
+/*  Menu page coffee block */
 
 
-.enjoy-main-background {
-    background: url(../assets/bgphoto.jpg), lightgray 50% / cover no-repeat;
+.main-menu {
+
+}
+
+.menu-page-block {
     margin-bottom: 100px;
-    background-position: 100%;
-    height: 640px;
-    border-radius: 40px;
 }
-
-.title-main {
+.menu-page-block-title {
     display: flex;
-    width: 530px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin:0 0 0 100px;
-    padding:100px 0 0 0;
-}
-.title-main-h1 {
-    color: #E1D4C9;
-    font-family: Inter;
-    font-size: 72px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 105%;
-}
-.span-title-main-h1 {
-    color: #B0907A;
-}
-.paragraph-main {
-    color: #E1D4C9;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-}
-.menu-button-main {
-    position: relative;
-    display: flex;
-    width: 200px;
-    padding: 20px 78px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    border-radius: 100px;
-    background: #E1D4C9;
-    color: #403F3D;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    overflow: hidden;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
-.menu-button-main::before {
-    content: url(../assets/coffee-cup.svg);
-    position: absolute;
-    top: 50%;
-    right: 45%;
-    transform: translate(100%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    overflow: visible;
-    transition: padding-left 0.4s ease;
+.menu-page-title {
+    text-align: center;
+    width: 800px;
+    margin-bottom: 40px;
 }
 
-.menu-button-main:hover::before {
-    opacity: 1;
+.menu-page-h1 {
+color: #403F3D;
+text-align: center;
+font-family: Inter;
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%;
+}
+.menu-page-span {
+color: #B0907A;
+font-family: Inter;
+font-size: 60px;
+font-style: italic;
+font-weight: 600;
+line-height: 125%;
+}
+.menu-page-links {
+    display: flex;
+}
+.menu-page-ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.menu-page-li {
+display: flex;
+padding: 8px 16px 8px 8px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 100px;
+border: 1px solid #C1B6AD;
+color: #403F3D;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+cursor: pointer;
+}
+.menu-page-li:first-child {
+    background: #665F55;
+    color: #E1D4C9;
+}
+.menu-page-li:hover {
+    background: #665F55;
+    color: #E1D4C9;
 }
 
-.menu-button-main:hover {
-    padding-left: 50px;
-    transition: all 0.5s ease;
+.menu-page-li-a-img {
+display: flex;
+padding: 3px 7px;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+background:#C1B6AD;
+}
+.menu-page-full-assortiment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.menu-page-images {
+display: flex;
+flex-direction: column;
+width: 310px;
+border: solid 1px #B0907A;
+border-radius: 20px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+.menu-page-img {
+    height: 340px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-out;
+}
+.menu-page-img:hover {
+    transform: scale(1.1);
+}
+.menu-page-description-coffee {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 200px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.menu-page-h4 {
+color: #403F3D;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%;
+}
+.menu-page-p {
+color: #403F3D;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+.menu-page-h3-price {
+color:#403F3D;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%;
 }
 
 /* footer */
