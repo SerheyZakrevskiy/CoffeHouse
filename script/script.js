@@ -8,8 +8,6 @@ iconBurger.addEventListener('click', (e) => {
     document.body.classList.toggle('_lock')
 })
 
-
-
 linksBurger.forEach(link => {
     link.addEventListener('click', (e) => {
         if (iconBurger.classList.contains('_active')) {
