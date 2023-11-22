@@ -174,7 +174,7 @@ body._lock {
 
 .title-main {
     display: flex;
-    width: 530px;
+    max-width: 530px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -294,7 +294,7 @@ body._lock {
     filter: invert(1);
     color: #E1D4C9;
 }
-.name-favourites.coffee {
+.name-favourites-coffee {
     color: #403F3D;
     font-family: Inter;
     font-size: 24px;
@@ -338,6 +338,9 @@ body._lock {
     border-radius: 100px;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+.dot:first-child {
+    background-color: #403F3D;
 }
 
 .dot.active {
@@ -579,10 +582,9 @@ margin-bottom: 40px;
 
 .footer-contact-us {
     width: 530px;
-    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 40px;
 }
 .footer-contact-us-title {
 color: #E1D4C9;
@@ -672,24 +674,6 @@ gap: 8px;
 
 /*  MEDIA  */
 
-@media screen and (max-width: 1060px) {
-    .title-main-h1, .span-title-main-h1 {
-        font-size: 55px;
-    }
-    .h1-favourites-coffee, .h1-span-favourites-coffee {
-        font-size: 55px;
-    }
-    .h1-title-about, .span-h1-title-about {
-        font-size: 55px;
-    }
-    .h1-mobile-app-download-content, .span-mobile-app-download-content {
-        font-size: 55px;
-    }
-    .h1-footer-coffee-time, .span-footer-coffee-time {
-        font-size: 55px;
-    }
-
-}
 
 @media screen and (max-width: 960px) {
     .mobile-app-download-content-center {
@@ -722,25 +706,19 @@ gap: 8px;
         line-height: 100%;
     }
     .title-main-h1, .span-title-main-h1 {
-        font-size: 40px;
+        font-size: 72px;
     }
     .h1-favourites-coffee, .h1-span-favourites-coffee {
-        font-size: 40px;
+        font-size: 60px;
     }
     .h1-title-about, .span-h1-title-about {
-        font-size: 40px;
+        font-size: 60px;
     }
     .h1-mobile-app-download-content, .span-mobile-app-download-content {
-        font-size: 40px;
+        font-size: 50px;
     }
     .h1-footer-coffee-time, .span-footer-coffee-time {
         font-size: 40px;
-    }
-    .menu-button-main {
-        width: 110px;
-        padding: 10px 68px;
-        font-size: 12px;
-        line-height: 100%;
     }
 
     .paragraph-main {
@@ -876,5 +854,135 @@ gap: 8px;
         font-style: normal;
         font-weight: 600;
         line-height: 125%;
+    }
+    .title-main {
+        margin: 0 0 0 60px;
+        padding: 100px 0 0 0;
+    }
+    .h1-favourites-coffee, .h1-span-favourites-coffee {
+        font-size: 60px;
+    }
+    .h1-title-about, .span-h1-title-about {
+        font-size: 60px;
+    }
+    .photogallery-about {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-scale-none {
+        display: none;
+    }
+    .mobile-app-download {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .mobile-app-download-content {
+        width: 100%;
+    }
+    .mobile-app-download-content-center {
+        width: 100%;
+    }
+    .mobile-app-images {
+        display: flex;
+        justify-content: center;
+    }
+    .h1-mobile-app-download-content, .span-mobile-app-download-content {
+        font-size: 60px;
+    }
+    .buttons-app-store {
+        width: 200px;
+        height: 64px;
+    }
+
+    .img-buttons-mobile-app {
+        width: 36px;
+        height: 36px;
+    }
+    .h3-buttons-mobile-app {
+    font-size: 16px;
+    line-height: 150%;
+    }
+    .paragraph-buttons-mobile-app {
+        font-size: 10px;
+        line-height: 140%;
+    }
+    .footer-block {
+        flex-direction: column;
+        height: 100%;
+        padding: 100px 0;
+    }
+    .footer-coffee-time {
+        max-width: 568px;
+        height: 100%;
+        margin: 0;
+    }
+    .h1-footer-coffee-time, .span-footer-coffee-time {
+        font-size: 60px;
+    }
+    .footer-contact-us {
+        max-width: 568px;
+        height: 100%;
+    }
+    .footer-contact-us-title {
+        font-size: 24px;
+        line-height: 125%;
+    }
+    .li-footer-contact-us-info {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .a-footer-contact-us-info {
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .title-main-h1, .span-title-main-h1 {
+        font-size: 42px;
+    }
+    .h1-favourites-coffee, .h1-span-favourites-coffee {
+        font-size: 32px;
+    }
+    .h1-title-about, .span-h1-title-about {
+        font-size: 32px;
+    }
+    .h1-mobile-app-download-content, .span-mobile-app-download-content {
+        font-size: 32px;
+    }
+    .h1-footer-coffee-time, .span-footer-coffee-time {
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .buttons-mobile-app-download {
+        flex-direction: column;
+    }
+    .footer-coffee-time {
+        width: 316px;
+    }
+    .footer-contact-us {
+        width: 316px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .title-main {
+        margin: 0 0 0 16px;
+        padding: 60px 0 0 0;
+    }
+    .enjoy-main-background {
+        max-height: 552px;
+    }
+    .buttons-arrow-slider {
+        display: none;
     }
 }
