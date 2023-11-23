@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="script/scriptMenuDesert.js" defer ></script>
 </head>
 <body>
     <header class="navigation">
@@ -16,6 +17,9 @@
         <div class="nav">
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
+            </div>
+            <div class="burger-icon">
+                <span></span>
             </div>
             <div class="nav-links">
                 <ul class="nav-links-ul">
@@ -26,8 +30,23 @@
                 </ul>
             </div>
             <div class="menu">
-                <a class="menu-nav-a" href="menuDesert.html">Menu</a>
+                <a class="menu-nav-a" href="menu.html">Menu</a>
                 <img src="assets/coffee-cup.svg" alt="menu-icon">
+            </div>
+            <!-- Burger-menu -->
+            <div class="burger-menu">
+                <div class="nav-links-burger">
+                    <ul class="nav-links-ul-burger">
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#favorite-coffee">Favorite coffee</a></li>
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#about">About</a></li>
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#mobile-app">Mobile app</a></li>
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#contact-us">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="menu-burger">
+                    <a class="menu-nav-a-burger" href="menu.html">Menu</a>
+                    <img src="assets/coffee-cup.svg" alt="menu-icon-burger">
+                </div>
             </div>
         </div>
         </div>
@@ -49,69 +68,88 @@
                 </div>
                 <div class="menu-page-full-assortiment">
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-1.png" alt="coffee-1">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-1.png" alt="coffee-1">
+                        </div>
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Marble cheesecake</h4>
-                            <P class="menu-page-p">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</P>
-                            <h3 class="menu-page-h3-price">$3.50</h3>
+                            <h4 class="menu-page-h4">Irish coffee</h4>
+                            <P class="menu-page-p">Fragrant black coffee with Jameson Irish whiskey and whipped milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-2.png" alt="coffee-2">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-2.png" alt="coffee-2">
+                        </div>
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Red Velvet</h4>
-                            <P class="menu-page-p">Layer cake with cream cheese frosting</P>
-                            <h3 class="menu-page-h3-price">$4.00</h3>
+                            <h4 class="menu-page-h4">Kahlua coffee</h4>
+                            <P class="menu-page-p">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-3.png" alt="">
-                        <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Cheescakes</h4>
-                            <P class="menu-page-p">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</P>
-                            <h3 class="menu-page-h3-price">$4.50</h3>
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-3.png" alt="">
                         </div>
-                    </div>
-                    <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-4.png" alt="">
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Creme brulee</h4>
-                            <P class="menu-page-p">Delicate creamy dessert in a caramel basket with wild berries</P>
-                            <h3 class="menu-page-h3-price">$4.00</h3>
-                        </div>
-                    </div>
-                    <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-5.png" alt="">
-                        <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Pancakes</h4>
-                            <P class="menu-page-p">Tender pancakes with strawberry jam and fresh strawberries</P>
-                            <h3 class="menu-page-h3-price">$4.50</h3>
-                        </div>
-                    </div>
-                    <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-6.png" alt="">
-                        <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Honey cake</h4>
-                            <P class="menu-page-p">Classic honey cake with delicate custard</P>
-                            <h3 class="menu-page-h3-price">$4.50</h3>
-                        </div>
-                    </div>
-                    <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-7.png" alt="">
-                        <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Chocolate cake</h4>
-                            <P class="menu-page-p">Cake with hot chocolate filling and nuts with dried apricots</P>
+                            <h4 class="menu-page-h4">Honey raf</h4>
+                            <P class="menu-page-p">Espresso with frothed milk, cream and aromatic honey</P>
                             <h3 class="menu-page-h3-price">$5.50</h3>
                         </div>
                     </div>
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/dessert-8.png" alt="">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-4.png" alt="">
+                        </div>
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Black forest</h4>
-                            <P class="menu-page-p">A combination of thin sponge cake with cherry jam and light chocolate mousse</P>
+                            <h4 class="menu-page-h4">Ice cappuccino</h4>
+                            <P class="menu-page-p">Cappuccino with soft thick foam in summer version with ice</P>
+                            <h3 class="menu-page-h3-price">$5.00</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-5.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Espresso</h4>
+                            <P class="menu-page-p">Classic black coffee</P>
+                            <h3 class="menu-page-h3-price">$4.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-6.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Latte</h4>
+                            <P class="menu-page-p">Espresso coffee with the addition of steamed milk and dense milk foam</P>
+                            <h3 class="menu-page-h3-price">$5.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-7.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Latte macchiato</h4>
+                            <P class="menu-page-p">Espresso with frothed milk and chocolate</P>
+                            <h3 class="menu-page-h3-price">$5.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-8.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Coffee with cognac</h4>
+                            <P class="menu-page-p">Fragrant black coffee with cognac and whipped cream</P>
                             <h3 class="menu-page-h3-price">$6.50</h3>
                         </div>
                     </div>
+                </div>
+                <div class="refresh-assoriment">
+                    <a class="refresh-assortiment-button"><img class="refresh-img" src="assets/button-icon-dark.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -132,11 +170,14 @@
                     <h1 class="footer-contact-us-title">Contact us</h1>
                     <div class="footer-contact-us-info">
                         <ul class="ul-footer-contact-us-info" >
-                            <li class="li-footer-contact-us-info" ><address  class="a-footer-contact-us-info">
-                                <img src="assets/pin-alt.svg" alt=""> 8558 Green Rd.,  LA
+                            <li class="li-footer-contact-us-info" >
+                                <address class="a-footer-contact-us-info">
+                                <img src="assets/pin-alt.svg" alt="">
+                                <a class="a-footer-contact-us-info-text" href="https://maps.google.com?q=8558%20Green%20Rd.,%20LA" target="_blank">
+                                    8558 Green Rd., LA
+                                </a>
                             </address></li>
-                            <li class="li-footer-contact-us-info" ><a  class="a-footer-contact-us-info" href="tel:+1234567890"> <img src="assets/phone.svg" alt="">+1 (603) 555-0123</a>
-                            </li>
+                            <li class="li-footer-contact-us-info" ><a  class="a-footer-contact-us-info" href="tel:+380931158146"> <img src="assets/phone.svg" alt="">+1 (603) 555-0123</a></li>
                             <li class="li-footer-contact-us-info" ><img src="assets/clock.svg" alt="">Moon-Sat 9:00 AM-23:00 PM</li>
                         </ul>
                     </div>

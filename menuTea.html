@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="script/scriptMenuTea.js" defer ></script>
 </head>
 <body>
     <header class="navigation">
@@ -16,6 +17,9 @@
         <div class="nav">
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
+            </div>
+            <div class="burger-icon">
+                <span></span>
             </div>
             <div class="nav-links">
                 <ul class="nav-links-ul">
@@ -26,8 +30,23 @@
                 </ul>
             </div>
             <div class="menu">
-                <a class="menu-nav-a" href="menuTea.html">Menu</a>
+                <a class="menu-nav-a" href="menu.html">Menu</a>
                 <img src="assets/coffee-cup.svg" alt="menu-icon">
+            </div>
+            <!-- Burger-menu -->
+            <div class="burger-menu">
+                <div class="nav-links-burger">
+                    <ul class="nav-links-ul-burger">
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#favorite-coffee">Favorite coffee</a></li>
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#about">About</a></li>
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#mobile-app">Mobile app</a></li>
+                        <li class="nav-li-burger"><a class="nav-li-a-burger" href="#contact-us">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="menu-burger">
+                    <a class="menu-nav-a-burger" href="menu.html">Menu</a>
+                    <img src="assets/coffee-cup.svg" alt="menu-icon-burger">
+                </div>
             </div>
         </div>
         </div>
@@ -40,48 +59,57 @@
                     <h1 class="menu-page-h1">Behind each of our cups hides an <span class="menu-page-span">amazing surprise </span></h1>
                     </div>
                     <div class="menu-page-links">
-                        <div class="menu-page-links">
-                            <div class="menu-page-ul">
-                                <a href="menu.html" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖.png" alt="">Coffee</a>
-                                <a href="#" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖 (1).png" alt="">Tea</a>
-                                <a href="menuDesert.html" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖 (2).png" alt="">Desert</a>
-                            </div>
+                        <div class="menu-page-ul">
+                            <a href="menu.html" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖.png" alt="">Coffee</a>
+                            <a href="#" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖 (1).png" alt="">Tea</a>
+                            <a href="menuDesert.html" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖 (2).png" alt="">Desert</a>
                         </div>
                     </div>
                 </div>
                 <div class="menu-page-full-assortiment">
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/tea-1.png" alt="tea-1">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-1.png" alt="coffee-1">
+                        </div>
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Moroccan</h4>
-                            <P class="menu-page-p">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</P>
-                            <h3 class="menu-page-h3-price">$4.50</h3>
+                            <h4 class="menu-page-h4">Irish coffee</h4>
+                            <P class="menu-page-p">Fragrant black coffee with Jameson Irish whiskey and whipped milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/tea-2.png" alt="tea-2">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-2.png" alt="coffee-2">
+                        </div>
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Ginder</h4>
-                            <P class="menu-page-p">Original black tea with fresh ginger, lemon and honey</P>
-                            <h3 class="menu-page-h3-price">$5.00</h3>
+                            <h4 class="menu-page-h4">Kahlua coffee</h4>
+                            <P class="menu-page-p">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
                     <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/tea-3.png" alt="">
-                        <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Cranberry</h4>
-                            <P class="menu-page-p">Invigorating black tea with cranberry and honey</P>
-                            <h3 class="menu-page-h3-price">$5.00</h3>
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-3.png" alt="">
                         </div>
-                    </div>
-                    <div class="menu-page-images">
-                        <img class="menu-page-img" src="assets/tea-4.png" alt="">
                         <div class="menu-page-description-coffee">
-                            <h4 class="menu-page-h4">Sea buckthorn</h4>
-                            <P class="menu-page-p">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</P>
+                            <h4 class="menu-page-h4">Honey raf</h4>
+                            <P class="menu-page-p">Espresso with frothed milk, cream and aromatic honey</P>
                             <h3 class="menu-page-h3-price">$5.50</h3>
                         </div>
                     </div>
+                    <div class="menu-page-images">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-4.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Ice cappuccino</h4>
+                            <P class="menu-page-p">Cappuccino with soft thick foam in summer version with ice</P>
+                            <h3 class="menu-page-h3-price">$5.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="refresh-assoriment">
+                    <a class="refresh-assortiment-button"><img class="refresh-img" src="assets/button-icon-dark.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -102,11 +130,14 @@
                     <h1 class="footer-contact-us-title">Contact us</h1>
                     <div class="footer-contact-us-info">
                         <ul class="ul-footer-contact-us-info" >
-                            <li class="li-footer-contact-us-info" ><address  class="a-footer-contact-us-info">
-                                <img src="assets/pin-alt.svg" alt=""> 8558 Green Rd.,  LA
+                            <li class="li-footer-contact-us-info" >
+                                <address class="a-footer-contact-us-info">
+                                <img src="assets/pin-alt.svg" alt="">
+                                <a class="a-footer-contact-us-info-text" href="https://maps.google.com?q=8558%20Green%20Rd.,%20LA" target="_blank">
+                                    8558 Green Rd., LA
+                                </a>
                             </address></li>
-                            <li class="li-footer-contact-us-info" ><a  class="a-footer-contact-us-info" href="tel:+1234567890"> <img src="assets/phone.svg" alt="">+1 (603) 555-0123</a>
-                            </li>
+                            <li class="li-footer-contact-us-info" ><a  class="a-footer-contact-us-info" href="tel:+380931158146"> <img src="assets/phone.svg" alt="">+1 (603) 555-0123</a></li>
                             <li class="li-footer-contact-us-info" ><img src="assets/clock.svg" alt="">Moon-Sat 9:00 AM-23:00 PM</li>
                         </ul>
                     </div>
