@@ -1,3 +1,5 @@
+import products from './products.json' assert {type: 'json'};
+
 const iconBurger = document.querySelector('.burger-icon')
 const burgerMenu = document.querySelector('.burger-menu')
 const linksBurger = document.querySelectorAll('.nav-li-a-burger')
@@ -218,3 +220,21 @@ menuDesert.addEventListener('click', () => {
 
 
 
+// MODAL WINDOW
+
+// Обработчик клика для каждой карточки продукта
+document.getElementById('product1').addEventListener('click', function () {
+    openModal({ name: 'Irish coffee', description: 'Fragrant black coffee with Jameson Irish whiskey and whipped milk', price: '$7.00' /* Другие свойства */ });
+});
+
+document.getElementById('product2').addEventListener('click', function () {
+    openModal({ name: 'Kahlua coffee', description: 'Classic coffee with milk and Kahlua liqueur under a cap of frothed milk', price: '$7.00' /* Другие свойства */ });
+});
+
+// Функция открытия модального окна
+function openModal(productData) {
+    document.getElementById('modalImage').src = 'assets/' + productData.name.toLowerCase().replace(/\s+/g, '-') + '.png';
+    document.getElementById('modalTitle').innerText = productData.name;
+    document.getElementById('modalDescription').innerText = productData.description;
+    document.getElementById('myModal').style.display = 'flex';
+}

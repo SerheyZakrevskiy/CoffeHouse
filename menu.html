@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script src="script/scriptMenu.js" defer ></script>
+    <script type="module" src="script/scriptMenu.js" defer ></script>
 </head>
 <body>
     <header class="navigation">
@@ -77,7 +77,7 @@
                             <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images page-images-coffee">
+                    <div class="menu-page-images page-images-coffee" onclick="openModal(productData2)" >
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-2.png" alt="coffee-2">
                         </div>
@@ -315,5 +315,26 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal-container">
+        <div class="modal-content">
+            <div class="modal-images">
+                <img src="" alt="" id="modalImage">
+            </div>
+            <div class="modal-info-product">
+                <h3 class="module-title" id="modalTitle"></h3>
+                <p class="module-paragraph" id="modalDescription"></p>
+                <div class="module-size" id="modalSizes"></div>
+                <div class="module-additivies" id="modalAdditives"></div>
+                <h3 class="module-total">Total:</h3>
+                <span id="modalTotal"></span>
+                <p class="module-total-paragraph">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                <a href="#">Button</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
