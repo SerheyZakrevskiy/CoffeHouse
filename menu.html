@@ -60,14 +60,14 @@
                     </div>
                     <div class="menu-page-links">
                         <div class="menu-page-ul">
-                            <a href="#" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖.png" alt="">Coffee</a>
-                            <a href="menuTea.html" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖 (1).png" alt="">Tea</a>
-                            <a href="menuDesert.html" class="menu-page-a"><img class="menu-page-li-a-img" src="assets/🫖 (2).png" alt="">Desert</a>
+                            <a id="menu-coffee"  class="menu-page-a coffee-active-menu menu-active"><img class="menu-page-li-a-img" src="assets/🫖.png" alt="">Coffee</a>
+                            <a id="menu-tea"  class="menu-page-a tea-active-menu"><img class="menu-page-li-a-img" src="assets/🫖 (1).png" alt="">Tea</a>
+                            <a id="menu-desert" class="menu-page-a desert-active-menu"><img class="menu-page-li-a-img" src="assets/🫖 (2).png" alt="">Desert</a>
                         </div>
                     </div>
                 </div>
-                <div class="menu-page-full-assortiment">
-                    <div class="menu-page-images" onclick="showModal('Irish coffee', 'Fragrant black coffee with Jameson Irish whiskey and whipped milk', 7.00, 'assets/coffee-1.png')">
+                <div class="menu-page-full-assortiment menu-coffee-assortiment">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-1.png" alt="coffee-1">
                         </div>
@@ -77,7 +77,7 @@
                             <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-2.png" alt="coffee-2">
                         </div>
@@ -87,7 +87,7 @@
                             <h3 class="menu-page-h3-price">$7.00</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-3.png" alt="">
                         </div>
@@ -97,7 +97,7 @@
                             <h3 class="menu-page-h3-price">$5.50</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-4.png" alt="">
                         </div>
@@ -107,7 +107,7 @@
                             <h3 class="menu-page-h3-price">$5.00</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-5.png" alt="">
                         </div>
@@ -117,7 +117,7 @@
                             <h3 class="menu-page-h3-price">$4.50</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-6.png" alt="">
                         </div>
@@ -127,7 +127,7 @@
                             <h3 class="menu-page-h3-price">$5.50</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-7.png" alt="">
                         </div>
@@ -137,7 +137,7 @@
                             <h3 class="menu-page-h3-price">$5.50</h3>
                         </div>
                     </div>
-                    <div class="menu-page-images">
+                    <div class="menu-page-images page-images-coffee">
                         <div class="menu-page-images-img">
                             <img class="menu-page-img" src="assets/coffee-8.png" alt="">
                         </div>
@@ -148,7 +148,137 @@
                         </div>
                     </div>
                 </div>
-                <div class="refresh-assoriment">
+                <div class="refresh-assoriment refresh-assort-coffee hidden">
+                    <a class="refresh-assortiment-button"><img class="refresh-img" src="assets/button-icon-dark.svg" alt=""></a>
+                </div>
+                <div class="menu-page-full-assortiment menu-tea-assortiment hidden">
+                    <div class="menu-page-images page-images-tea">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-1.png" alt="coffee-1">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Irish coffee</h4>
+                            <P class="menu-page-p">Fragrant black coffee with Jameson Irish whiskey and whipped milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-tea">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-2.png" alt="coffee-2">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Kahlua coffee</h4>
+                            <P class="menu-page-p">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-tea">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-3.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Honey raf</h4>
+                            <P class="menu-page-p">Espresso with frothed milk, cream and aromatic honey</P>
+                            <h3 class="menu-page-h3-price">$5.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-tea">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/tea-4.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Ice cappuccino</h4>
+                            <P class="menu-page-p">Cappuccino with soft thick foam in summer version with ice</P>
+                            <h3 class="menu-page-h3-price">$5.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="refresh-assoriment refresh-assort-tea hidden">
+                    <a class="refresh-assortiment-button"><img class="refresh-img" src="assets/button-icon-dark.svg" alt=""></a>
+                </div>
+                <div class="menu-page-full-assortiment menu-desert-assortiment hidden">
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-1.png" alt="coffee-1">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Irish coffee</h4>
+                            <P class="menu-page-p">Fragrant black coffee with Jameson Irish whiskey and whipped milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-2.png" alt="coffee-2">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Kahlua coffee</h4>
+                            <P class="menu-page-p">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</P>
+                            <h3 class="menu-page-h3-price">$7.00</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-3.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Honey raf</h4>
+                            <P class="menu-page-p">Espresso with frothed milk, cream and aromatic honey</P>
+                            <h3 class="menu-page-h3-price">$5.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-4.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Ice cappuccino</h4>
+                            <P class="menu-page-p">Cappuccino with soft thick foam in summer version with ice</P>
+                            <h3 class="menu-page-h3-price">$5.00</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-5.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Espresso</h4>
+                            <P class="menu-page-p">Classic black coffee</P>
+                            <h3 class="menu-page-h3-price">$4.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-6.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Latte</h4>
+                            <P class="menu-page-p">Espresso coffee with the addition of steamed milk and dense milk foam</P>
+                            <h3 class="menu-page-h3-price">$5.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-7.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Latte macchiato</h4>
+                            <P class="menu-page-p">Espresso with frothed milk and chocolate</P>
+                            <h3 class="menu-page-h3-price">$5.50</h3>
+                        </div>
+                    </div>
+                    <div class="menu-page-images page-images-desert">
+                        <div class="menu-page-images-img">
+                            <img class="menu-page-img" src="assets/dessert-8.png" alt="">
+                        </div>
+                        <div class="menu-page-description-coffee">
+                            <h4 class="menu-page-h4">Coffee with cognac</h4>
+                            <P class="menu-page-p">Fragrant black coffee with cognac and whipped cream</P>
+                            <h3 class="menu-page-h3-price">$6.50</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="refresh-assoriment refresh-assort-desert hidden">
                     <a class="refresh-assortiment-button"><img class="refresh-img" src="assets/button-icon-dark.svg" alt=""></a>
                 </div>
             </div>

@@ -214,10 +214,11 @@ font-weight: 600;
 line-height: 150%;
 cursor: pointer;
 }
-.menu-page-a:nth-child(1) {
+.menu-active {
     background: #665F55;
     color: #E1D4C9;
 }
+
 .menu-page-a:hover {
     background: #665F55;
     color: #E1D4C9;
@@ -256,9 +257,10 @@ overflow: hidden;
     height: 100%;
     width: 100%;
     transition: transform 0.5s ease-out;
+    transform: scale(1.1);
 }
 .menu-page-img:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 .menu-page-description-coffee {
     display: flex;
