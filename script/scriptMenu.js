@@ -321,6 +321,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
 
     cards1.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[0].category}-1.png`
             modalInfoTitle.textContent = products[0].name;
             modalInfoDescription.textContent = products[0].description;
@@ -439,6 +440,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
     })
         cards2.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[1].category}-2.png`
             modalInfoTitle.textContent = products[1].name;
             modalInfoDescription.textContent = products[1].description;
@@ -489,9 +491,52 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         cards3.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[2].category}-3.png`
             modalInfoTitle.textContent = products[2].name;
             modalInfoDescription.textContent = products[2].description;
@@ -542,9 +587,52 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         cards4.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[3].category}-4.png`
             modalInfoTitle.textContent = products[3].name;
             modalInfoDescription.textContent = products[3].description;
@@ -595,9 +683,52 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         cards5.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[4].category}-5.png`
             modalInfoTitle.textContent = products[4].name;
             modalInfoDescription.textContent = products[4].description;
@@ -648,9 +779,52 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         cards6.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[5].category}-6.png`
             modalInfoTitle.textContent = products[5].name;
             modalInfoDescription.textContent = products[5].description;
@@ -701,9 +875,52 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         cards7.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[6].category}-7.png`
             modalInfoTitle.textContent = products[6].name;
             modalInfoDescription.textContent = products[6].description;
@@ -754,9 +971,52 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         cards8.addEventListener('click', () => {
             modalsCoffee.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImg.src = `assets/${products[7].category}-8.png`
             modalInfoTitle.textContent = products[7].name;
             modalInfoDescription.textContent = products[7].description;
@@ -807,13 +1067,54 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+            cinnamonButton.addEventListener('click', () => {
+                if (cinnamonButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.remove('active-buttons-modal');
+                        spanCinnamon.classList.remove('active-span-modal')
+                } else {
+                    
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        cinnamonButton.classList.add('active-buttons-modal');
+                        spanCinnamon.classList.add('active-span-modal')
+                }
+            })
+       
+        
+            syrupButton.addEventListener('click', () => {
+                if (syrupButton.classList.contains('active-buttons-modal')) {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.remove('active-buttons-modal');
+                        spanSyrup.classList.remove('active-span-modal')
+                } else {
+                        const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                        modalCountTotal.textContent = `$${val}`;
+                        syrupButton.classList.add('active-buttons-modal');
+                        spanSyrup.classList.add('active-span-modal')
+                }
+            })
+            sugarButton.addEventListener('click', () => {
+                if (sugarButton.classList.contains('active-buttons-modal')) {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.remove('active-buttons-modal');
+                    spanSugar.classList.remove('active-span-modal')
+            } else {
+                    const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) + 0.5).toFixed(2);
+                    modalCountTotal.textContent = `$${val}`;
+                    sugarButton.classList.add('active-buttons-modal');
+                    spanSugar.classList.add('active-span-modal')
+            }
+        })
         })
         
         
         cards9.addEventListener('click', () => {
-            console.log(teaSizeM, teaSizeS, teaSizeL, teaLemonButton, teaSyrupButton, teaSugarButton);
-            console.log(teaLemonButton)
             modalsTea.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgTea.src = `assets/${products[8].category}-1.png`
             modalInfoTitleTea.textContent = products[8].name;
             modalInfoDescriptionTea.textContent = products[8].description;
@@ -930,6 +1231,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         })
         cards10.addEventListener('click', () => {
             modalsTea.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgTea.src = `assets/${products[9].category}-2.png`
             modalInfoTitleTea.textContent = products[9].name;
             modalInfoDescriptionTea.textContent = products[9].description;
@@ -1047,6 +1349,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards11.addEventListener('click', () => {
             modalsTea.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgTea.src = `assets/${products[10].category}-3.png`
             modalInfoTitleTea.textContent = products[10].name;
             modalInfoDescriptionTea.textContent = products[10].description;
@@ -1163,6 +1466,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         })
         cards12.addEventListener('click', () => {
             modalsTea.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgTea.src = `assets/${products[11].category}-4.png`
             modalInfoTitleTea.textContent = products[11].name;
             modalInfoDescriptionTea.textContent = products[11].description;
@@ -1284,6 +1588,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards13.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[12].category}-1.png`
             modalInfoTitleDesert.textContent = products[12].name;
             modalInfoDescriptionDesert.textContent = products[12].description;
@@ -1401,6 +1706,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards14.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[13].category}-2.png`
             modalInfoTitleDesert.textContent = products[13].name;
             modalInfoDescriptionDesert.textContent = products[13].description;
@@ -1518,6 +1824,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards15.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[14].category}-3.png`
             modalInfoTitleDesert.textContent = products[14].name;
             modalInfoDescriptionDesert.textContent = products[14].description;
@@ -1636,6 +1943,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards16.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[15].category}-4.png`
             modalInfoTitleDesert.textContent = products[15].name;
             modalInfoDescriptionDesert.textContent = products[15].description;
@@ -1755,6 +2063,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards17.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[16].category}-5.png`
             modalInfoTitleDesert.textContent = products[16].name;
             modalInfoDescriptionDesert.textContent = products[16].description;
@@ -1873,6 +2182,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards18.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[17].category}-6.png`
             modalInfoTitleDesert.textContent = products[17].name;
             modalInfoDescriptionDesert.textContent = products[17].description;
@@ -1992,6 +2302,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards19.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[18].category}-7.png`
             modalInfoTitleDesert.textContent = products[18].name;
             modalInfoDescriptionDesert.textContent = products[18].description;
@@ -2110,6 +2421,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
         
         cards20.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
+            document.body.classList.add('body-not-scroll')
             modalImgDesert.src = `assets/${products[19].category}-8.png`
             modalInfoTitleDesert.textContent = products[19].name;
             modalInfoDescriptionDesert.textContent = products[19].description;
@@ -2248,6 +2560,7 @@ buttonModalClose.addEventListener('click', () => {
         syrupButton.classList.remove('active-buttons-modal');
         spanSyrup.classList.remove('active-span-modal')
         modalsCoffee.style.display = 'none'
+        document.body.classList.remove('body-not-scroll')
     })
 
 
@@ -2265,6 +2578,7 @@ buttonModalCloseTea.addEventListener('click', () => {
     teaSyrupButton.classList.remove('active-buttons-modal');
     teaSpanSyrup.classList.remove('active-span-modal')
     modalsTea.style.display = 'none'
+    document.body.classList.remove('body-not-scroll')
 })
 
 buttonModalCloseDesert.addEventListener('click', () => {
@@ -2281,6 +2595,7 @@ buttonModalCloseDesert.addEventListener('click', () => {
                 desertJamButton.classList.remove('active-buttons-modal');
                 desertSpanJam.classList.remove('active-span-modal')
     modalsDesert.style.display = 'none'
+    document.body.classList.remove('body-not-scroll')
 })
 
 
