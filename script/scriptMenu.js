@@ -1067,6 +1067,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 const val = (CountTotal + 1).toFixed(2)
                 modalCountTotal.textContent = `$${val}`
             })
+
             cinnamonButton.addEventListener('click', () => {
                 if (cinnamonButton.classList.contains('active-buttons-modal')) {
                         const val = (parseFloat(modalCountTotal.textContent.replace('$', '')) - 0.5).toFixed(2);
@@ -1545,7 +1546,6 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                         teaLemonButton.classList.remove('active-buttons-modal');
                         teaSpanLemon.classList.remove('active-span-modal')
                 } else {
-                    
                         const val = (parseFloat(countTotalTea.textContent.replace('$', '')) + 0.5).toFixed(2);
                         countTotalTea.textContent = `$${val}`;
                         teaLemonButton.classList.add('active-buttons-modal');
@@ -2388,8 +2388,8 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                         desertSpanNuts.classList.add('active-span-modal')
                 }
             })
-       
-        
+
+
             desertJamButton.addEventListener('click', () => {
                 if (desertJamButton.classList.contains('active-buttons-modal')) {
                         const val = (parseFloat(countTotalDesert.textContent.replace('$', '')) - 0.5).toFixed(2);
@@ -2417,8 +2417,6 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
             }
         })
         })
-        
-        
         cards20.addEventListener('click', () => {
             modalsDesert.style.display = 'flex'
             document.body.classList.add('body-not-scroll')
@@ -2433,7 +2431,7 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
 
                 desertSizeS.classList.remove('active-buttons-modal')
                 desertSpan50.classList.remove('active-span-modal')
-            
+
                 desertSizeL.classList.remove('active-buttons-modal')
                 desertSpan200.classList.remove('active-span-modal')
 
@@ -2443,19 +2441,19 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 desertSpanNuts.classList.remove('active-span-modal')
                 desertJamButton.classList.remove('active-buttons-modal');
                 desertSpanJam.classList.remove('active-span-modal')
-            
+
                 const val = (CountTotal + 0.5).toFixed(2)
                 countTotalDesert.textContent = `$${val}`
-            
+
             })
-            
+
             desertSizeS.addEventListener('click', () => {
                 desertSizeS.classList.add('active-buttons-modal')
                 desertSpan50.classList.add('active-span-modal')
-            
+
                 desertSizeM.classList.remove('active-buttons-modal')
                 desertSpan100.classList.remove('active-span-modal')
-            
+
                 desertSizeL.classList.remove('active-buttons-modal')
                 desertSpan200.classList.remove('active-span-modal')
 
@@ -2465,19 +2463,19 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 desertSpanNuts.classList.remove('active-span-modal')
                 desertJamButton.classList.remove('active-buttons-modal');
                 desertSpanJam.classList.remove('active-span-modal')
-            
-            
+
+
                 const val = (CountTotal).toFixed(2)
                 countTotalDesert.textContent = `$${val}`
             })
-            
+
             desertSizeL.addEventListener('click', () => {
                 desertSizeL.classList.add('active-buttons-modal')
                 desertSpan200.classList.add('active-span-modal')
-            
+
                 desertSizeM.classList.remove('active-buttons-modal')
                 desertSpan100.classList.remove('active-span-modal')
-            
+
                 desertSizeS.classList.remove('active-buttons-modal')
                 desertSpan50.classList.remove('active-span-modal')
 
@@ -2487,12 +2485,12 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                 desertSpanNuts.classList.remove('active-span-modal')
                 desertJamButton.classList.remove('active-buttons-modal');
                 desertSpanJam.classList.remove('active-span-modal')
-            
+
                 const val = (CountTotal + 1).toFixed(2)
                 countTotalDesert.textContent = `$${val}`
             })
 
-        
+
             desertNutButton.addEventListener('click', () => {
                 if (desertNutButton.classList.contains('active-buttons-modal')) {
                         const val = (parseFloat(countTotalDesert.textContent.replace('$', '')) - 0.5).toFixed(2);
@@ -2500,15 +2498,14 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
                         desertNutButton.classList.remove('active-buttons-modal');
                         desertSpanNuts.classList.remove('active-span-modal')
                 } else {
-                    
+
                         const val = (parseFloat(countTotalDesert.textContent.replace('$', '')) + 0.5).toFixed(2);
                         countTotalDesert.textContent = `$${val}`;
                         desertNutButton.classList.add('active-buttons-modal');
                         desertSpanNuts.classList.add('active-span-modal')
                 }
             })
-       
-        
+
             desertJamButton.addEventListener('click', () => {
                 if (desertJamButton.classList.contains('active-buttons-modal')) {
                         const val = (parseFloat(countTotalDesert.textContent.replace('$', '')) - 0.5).toFixed(2);
@@ -2549,22 +2546,24 @@ fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/task
 
 
 buttonModalClose.addEventListener('click', () => {
-        sizeM.classList.remove('active-buttons-modal')
-        span300.classList.remove('active-span-modal')
-        sizeL.classList.remove('active-buttons-modal')
-        span400.classList.remove('active-span-modal')
-        sugarButton.classList.remove('active-buttons-modal');
-        spanSugar.classList.remove('active-span-modal')
-        cinnamonButton.classList.remove('active-buttons-modal');
-        spanCinnamon.classList.remove('active-span-modal')
-        syrupButton.classList.remove('active-buttons-modal');
-        spanSyrup.classList.remove('active-span-modal')
-        modalsCoffee.style.display = 'none'
-        document.body.classList.remove('body-not-scroll')
+    sizeS.classList.add('active-buttons-modal')
+    sizeM.classList.remove('active-buttons-modal')
+    span300.classList.remove('active-span-modal')
+    sizeL.classList.remove('active-buttons-modal')
+    span400.classList.remove('active-span-modal')
+    sugarButton.classList.remove('active-buttons-modal');
+    spanSugar.classList.remove('active-span-modal')
+    cinnamonButton.classList.remove('active-buttons-modal');
+    spanCinnamon.classList.remove('active-span-modal')
+    syrupButton.classList.remove('active-buttons-modal');
+    spanSyrup.classList.remove('active-span-modal')
+    modalsCoffee.style.display = 'none'
+    document.body.classList.remove('body-not-scroll')
     })
 
 
 buttonModalCloseTea.addEventListener('click', () => {
+    sizeS.classList.add('active-buttons-modal')
     teaSizeM.classList.remove('active-buttons-modal')
     teaSpan300.classList.remove('active-span-modal')
 
@@ -2582,18 +2581,19 @@ buttonModalCloseTea.addEventListener('click', () => {
 })
 
 buttonModalCloseDesert.addEventListener('click', () => {
+    sizeS.classList.add('active-buttons-modal')
     desertSizeM.classList.remove('active-buttons-modal')
-                desertSpan100.classList.remove('active-span-modal')
-            
-                desertSizeL.classList.remove('active-buttons-modal')
-                desertSpan200.classList.remove('active-span-modal')
+    desertSpan100.classList.remove('active-span-modal')
 
-                desertBerriesButton.classList.remove('active-buttons-modal');
-                desertSpanBerries.classList.remove('active-span-modal')
-                desertNutButton.classList.remove('active-buttons-modal');
-                desertSpanNuts.classList.remove('active-span-modal')
-                desertJamButton.classList.remove('active-buttons-modal');
-                desertSpanJam.classList.remove('active-span-modal')
+    desertSizeL.classList.remove('active-buttons-modal')
+    desertSpan200.classList.remove('active-span-modal')
+
+    desertBerriesButton.classList.remove('active-buttons-modal');
+    desertSpanBerries.classList.remove('active-span-modal')
+    desertNutButton.classList.remove('active-buttons-modal');
+    desertSpanNuts.classList.remove('active-span-modal')
+    desertJamButton.classList.remove('active-buttons-modal');
+    desertSpanJam.classList.remove('active-span-modal')
     modalsDesert.style.display = 'none'
     document.body.classList.remove('body-not-scroll')
 })

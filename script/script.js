@@ -52,8 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".buttons-left-favourites-coffee").addEventListener("click", prevSlide);
     document.querySelector(".buttons-right-favourites-coffee").addEventListener("click", nextSlide);
 
-    // Опционально: Автоматическое слайд-шоу
-    // setInterval(nextSlide, 5000);
+    dots[0].classList.add("active");
 
     showSlide(currentSlideIndex);
 });
